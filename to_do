@@ -1,0 +1,13 @@
+1. Main Page 1
+    - press “Pair with Keyboard” -> check bluetooth signal from Edison and connect the edison.
+2. Main Page 2
+    - press “Disconnect” -> disconnect Edison
+3. Customize Key Button Screen
+    - Play Sound -> look for the audio file for the specific button and play it
+    - Select Custom Sound -> look for the audio file folder in the Edison and show the filenames
+    - Set Quiet Hours -> take an input for the desired time and set quiet hours for the keyboard.
+4. Statistics Screen
+    - Export Data -> Convert the file received from Edison to .csv format. Send the converted file to the written email.
+    - (Optional) Show chart based on the file from Edison
+5. Setting Screen
+    - Disable Keyboard -> disable sounds, stop counting
