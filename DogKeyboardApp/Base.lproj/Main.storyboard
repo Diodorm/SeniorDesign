@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qrZ-ej-OVS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qrZ-ej-OVS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -57,7 +57,7 @@
         <!--View Controller-->
         <scene sceneID="CKh-T4-cKV">
             <objects>
-                <viewController id="Pcm-nn-gbQ" sceneMemberID="viewController">
+                <viewController id="Pcm-nn-gbQ" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JeM-Cl-3yb"/>
                         <viewControllerLayoutGuide type="bottom" id="Zm9-TH-J0M"/>
@@ -161,7 +161,7 @@
         <!--View Controller-->
         <scene sceneID="BfW-2l-X0O">
             <objects>
-                <viewController id="1WF-It-xSL" sceneMemberID="viewController">
+                <viewController id="1WF-It-xSL" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vcJ-Bv-Y3T"/>
                         <viewControllerLayoutGuide type="bottom" id="qOW-x6-94o"/>
@@ -232,7 +232,7 @@
         <!--View Controller-->
         <scene sceneID="hWd-XY-BgR">
             <objects>
-                <viewController id="YEp-Ob-XfR" sceneMemberID="viewController">
+                <viewController id="YEp-Ob-XfR" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gdL-9g-sxR"/>
                         <viewControllerLayoutGuide type="bottom" id="v1R-tH-GKU"/>
@@ -306,7 +306,7 @@
         <!--View Controller-->
         <scene sceneID="CLE-As-TkG">
             <objects>
-                <viewController id="L5S-X1-pdg" sceneMemberID="viewController">
+                <viewController id="L5S-X1-pdg" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="71A-wN-38k"/>
                         <viewControllerLayoutGuide type="bottom" id="zRT-VQ-SrB"/>
@@ -395,7 +395,7 @@
         <!--View Controller-->
         <scene sceneID="Ede-id-USI">
             <objects>
-                <viewController id="uie-sg-P3d" sceneMemberID="viewController">
+                <viewController id="uie-sg-P3d" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9N3-ic-Tz0"/>
                         <viewControllerLayoutGuide type="bottom" id="dVb-Av-Xzg"/>
@@ -481,7 +481,7 @@
         <!--View Controller-->
         <scene sceneID="GXk-mT-YGA">
             <objects>
-                <viewController id="mbB-Ee-9gB" sceneMemberID="viewController">
+                <viewController id="mbB-Ee-9gB" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P1r-AD-sah"/>
                         <viewControllerLayoutGuide type="bottom" id="SsB-mN-U2I"/>
