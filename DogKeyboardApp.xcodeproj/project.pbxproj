@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78571E763E5200B6C549 /* AppDelegate.swift */; };
-		49BA785A1E763E5200B6C549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78591E763E5200B6C549 /* ViewController.swift */; };
+		49BA785A1E763E5200B6C549 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78591E763E5200B6C549 /* PairViewController.swift */; };
 		49BA785D1E763E5200B6C549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA785B1E763E5200B6C549 /* Main.storyboard */; };
 		49BA785F1E763E5200B6C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BA785E1E763E5200B6C549 /* Assets.xcassets */; };
 		49BA78621E763E5200B6C549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA78601E763E5200B6C549 /* LaunchScreen.storyboard */; };
+		49FA89AC1E8B0CBE001F5542 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */; };
+		49FA89AE1E8B1321001F5542 /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA89AD1E8B1321001F5542 /* StatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49BA78541E763E5200B6C549 /* DogKeyboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogKeyboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BA78571E763E5200B6C549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49BA78591E763E5200B6C549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49BA78591E763E5200B6C549 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
 		49BA785C1E763E5200B6C549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49BA785E1E763E5200B6C549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BA78611E763E5200B6C549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BA78631E763E5200B6C549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		49FA89AD1E8B1321001F5542 /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				49BA78571E763E5200B6C549 /* AppDelegate.swift */,
-				49BA78591E763E5200B6C549 /* ViewController.swift */,
+				49BA78591E763E5200B6C549 /* PairViewController.swift */,
+				49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */,
+				49FA89AD1E8B1321001F5542 /* StatViewController.swift */,
 				49BA785B1E763E5200B6C549 /* Main.storyboard */,
 				49BA785E1E763E5200B6C549 /* Assets.xcassets */,
 				49BA78601E763E5200B6C549 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49BA785A1E763E5200B6C549 /* ViewController.swift in Sources */,
+				49FA89AC1E8B0CBE001F5542 /* MainViewController.swift in Sources */,
+				49BA785A1E763E5200B6C549 /* PairViewController.swift in Sources */,
+				49FA89AE1E8B1321001F5542 /* StatViewController.swift in Sources */,
 				49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				49BA78681E763E5200B6C549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

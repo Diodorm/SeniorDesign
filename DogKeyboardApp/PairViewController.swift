@@ -2,14 +2,14 @@
 //  ViewController.swift
 //  DogKeyboardApp
 //
-//  Created by Sanny Chun on 3/12/17.
+//  Created by Sanny Chun  & Hyunsu Park on 3/12/17.
 //  Copyright © 2017 TeamSupreme. All rights reserved.
 //
 
 import UIKit
 import CoreBluetooth
 
-class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
+class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
 
     // MARK: Properties
     @IBOutlet weak var pairKeyboard: UIButton!
