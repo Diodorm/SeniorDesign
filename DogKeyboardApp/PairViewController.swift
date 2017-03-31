@@ -10,13 +10,12 @@ import UIKit
 import CoreBluetooth
 
 class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
-
+    
     // MARK: Properties
-    @IBOutlet weak var pairKeyboard: UIButton!
     // Bluetooth: variables
     var manager: CBCentralManager!
     var peripheral: CBPeripheral!
-
+    
     // Bluetooth: UUID and Service Name
     let BEAN_NAME = "DogKeyboard"
     let BEAN_SCRATCH_UUID =
@@ -34,8 +33,12 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: Bluetooth Pairing
+    @IBAction func pairKeyboard(_ sender: Any) {
+        centralManagerDidUpdateState(manager)
+    }
+    
     // Bluetooth: Scan for devices
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
@@ -74,7 +77,7 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
             manager.connect(peripheral, options: nil)
         }
     }
-
+    
     // Bluetooth: Get services from the device
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         peripheral.discoverServices(nil)
@@ -101,14 +104,14 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     }
     
     /*
-    // Bluetooth: Notification of the updated value for characteristics
-    private func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
-        var count:UInt32 = 0;
-        if characteristic.uuid == BEAN_SCRATCH_UUID {
-            count = characteristic.value!.getBytes(&count, length: sizeof(UInt32))
-            labelCount.text = NSString(format: "%llu", count) as String
-        }
-    }
+     // Bluetooth: Notification of the updated value for characteristics
+     private func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
+     var count:UInt32 = 0;
+     if characteristic.uuid == BEAN_SCRATCH_UUID {
+     count = characteristic.value!.getBytes(&count, length: sizeof(UInt32))
+     labelCount.text = NSString(format: "%llu", count) as String
+     }
+     }
      */
 }
 
