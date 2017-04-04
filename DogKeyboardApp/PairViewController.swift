@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreBluetooth
+import NMSSH
 
 class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
     
@@ -27,6 +28,15 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
         super.viewDidLoad()
         //Bluetooth: Manager Declaration
         manager = CBCentralManager(delegate: self, queue: nil)
+        
+        let session = NMSSHSession(host: "199.66.180.8", andUsername: "DogKeyboard")
+        session?.connect()
+        if session?.isConnected == true {
+            session?.authenticate(byPassword: "TeamSupreme186")
+            if session?.isAuthorized == true {
+                print("Connection Successful.")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22F7FA4CC3EBD7ADD8CE9294 /* Pods_DogKeyboardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC4813C2AB6BE9E271C2A11 /* Pods_DogKeyboardApp.framework */; };
+		49894D891E92968B0088241B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49894D881E92968B0088241B /* SettingsViewController.swift */; };
 		49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78571E763E5200B6C549 /* AppDelegate.swift */; };
 		49BA785A1E763E5200B6C549 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78591E763E5200B6C549 /* PairViewController.swift */; };
 		49BA785D1E763E5200B6C549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA785B1E763E5200B6C549 /* Main.storyboard */; };
 		49BA785F1E763E5200B6C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BA785E1E763E5200B6C549 /* Assets.xcassets */; };
 		49BA78621E763E5200B6C549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA78601E763E5200B6C549 /* LaunchScreen.storyboard */; };
 		49FA89AC1E8B0CBE001F5542 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */; };
-		49FA89AE1E8B1321001F5542 /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA89AD1E8B1321001F5542 /* StatViewController.swift */; };
-		49FA89D21E8D91AB001F5542 /* StatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA89D11E8D91AB001F5542 /* StatsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49894D881E92968B0088241B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		49894D8F1E936B990088241B /* DogKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		49BA78541E763E5200B6C549 /* DogKeyboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogKeyboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BA78571E763E5200B6C549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BA78591E763E5200B6C549 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +28,9 @@
 		49BA78611E763E5200B6C549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BA78631E763E5200B6C549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		49FA89AD1E8B1321001F5542 /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
-		49FA89D11E8D91AB001F5542 /* StatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsTableViewController.swift; sourceTree = "<group>"; };
+		83C3F1226BDC80782777CB49 /* Pods-DogKeyboardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogKeyboardApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogKeyboardApp/Pods-DogKeyboardApp.release.xcconfig"; sourceTree = "<group>"; };
+		BAE3301F6987603B8C604A45 /* Pods-DogKeyboardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogKeyboardApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogKeyboardApp/Pods-DogKeyboardApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC4813C2AB6BE9E271C2A11 /* Pods_DogKeyboardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogKeyboardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F7FA4CC3EBD7ADD8CE9294 /* Pods_DogKeyboardApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EBA8A74391FB5757220B6C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAE3301F6987603B8C604A45 /* Pods-DogKeyboardApp.debug.xcconfig */,
+				83C3F1226BDC80782777CB49 /* Pods-DogKeyboardApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FD5DE963669F18A4E17B590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAC4813C2AB6BE9E271C2A11 /* Pods_DogKeyboardApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49BA784B1E763E5200B6C549 = {
 			isa = PBXGroup;
 			children = (
 				49BA78561E763E5200B6C549 /* DogKeyboardApp */,
 				49BA78551E763E5200B6C549 /* Products */,
+				3EBA8A74391FB5757220B6C6 /* Pods */,
+				3FD5DE963669F18A4E17B590 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,12 +86,12 @@
 				49BA78571E763E5200B6C549 /* AppDelegate.swift */,
 				49BA78591E763E5200B6C549 /* PairViewController.swift */,
 				49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */,
-				49FA89AD1E8B1321001F5542 /* StatViewController.swift */,
-				49FA89D11E8D91AB001F5542 /* StatsTableViewController.swift */,
+				49894D881E92968B0088241B /* SettingsViewController.swift */,
 				49BA785B1E763E5200B6C549 /* Main.storyboard */,
 				49BA785E1E763E5200B6C549 /* Assets.xcassets */,
 				49BA78601E763E5200B6C549 /* LaunchScreen.storyboard */,
 				49BA78631E763E5200B6C549 /* Info.plist */,
+				49894D8F1E936B990088241B /* DogKeyboard-Bridging-Header.h */,
 			);
 			path = DogKeyboardApp;
 			sourceTree = "<group>";
@@ -80,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49BA78661E763E5200B6C549 /* Build configuration list for PBXNativeTarget "DogKeyboardApp" */;
 			buildPhases = (
+				9F8059C70ABB73EAC096D9C9 /* [CP] Check Pods Manifest.lock */,
 				49BA78501E763E5200B6C549 /* Sources */,
 				49BA78511E763E5200B6C549 /* Frameworks */,
 				49BA78521E763E5200B6C549 /* Resources */,
+				9BAA2849B23C56CF16ACB632 /* [CP] Embed Pods Frameworks */,
+				A7BE9D4BAC31123FD868176C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +131,7 @@
 				TargetAttributes = {
 					49BA78531E763E5200B6C549 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D7W4R9U5L7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,6 +167,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BAA2849B23C56CF16ACB632 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogKeyboardApp/Pods-DogKeyboardApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8059C70ABB73EAC096D9C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7BE9D4BAC31123FD868176C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogKeyboardApp/Pods-DogKeyboardApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49BA78501E763E5200B6C549 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,9 +222,8 @@
 			files = (
 				49FA89AC1E8B0CBE001F5542 /* MainViewController.swift in Sources */,
 				49BA785A1E763E5200B6C549 /* PairViewController.swift in Sources */,
-				49FA89AE1E8B1321001F5542 /* StatViewController.swift in Sources */,
 				49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */,
-				49FA89D21E8D91AB001F5542 /* StatsTableViewController.swift in Sources */,
+				49894D891E92968B0088241B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,24 +344,30 @@
 		};
 		49BA78671E763E5200B6C549 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE3301F6987603B8C604A45 /* Pods-DogKeyboardApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7W4R9U5L7;
 				INFOPLIST_FILE = DogKeyboardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = supreme.DogKeyboardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DogKeyboardApp/DogKeyboard-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		49BA78681E763E5200B6C549 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C3F1226BDC80782777CB49 /* Pods-DogKeyboardApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D7W4R9U5L7;
 				INFOPLIST_FILE = DogKeyboardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = supreme.DogKeyboardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DogKeyboardApp/DogKeyboard-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
