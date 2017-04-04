@@ -37,16 +37,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="L5S-X1-pdg" kind="show" id="s2Y-cP-UXX"/>
+                                    <action selector="onPairPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wal-HR-yMB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dog Keyboard" id="LPg-UL-gKo"/>
-                    <connections>
-                        <outlet property="pairKeyboard" destination="9XS-4l-ufW" id="yIJ-5V-D7n"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,7 +299,7 @@
         <!--Home-->
         <scene sceneID="CLE-As-TkG">
             <objects>
-                <viewController id="L5S-X1-pdg" customClass="MainViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="L5S-X1-pdg" customClass="MainViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="71A-wN-38k"/>
                         <viewControllerLayoutGuide type="bottom" id="zRT-VQ-SrB"/>
