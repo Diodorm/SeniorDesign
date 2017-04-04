@@ -458,6 +458,9 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="uie-sg-P3d" eventType="touchUpInside" id="MBz-SJ-ZXD"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kin-zV-aul">
                                 <rect key="frame" x="119" y="169" width="240" height="30"/>
@@ -473,10 +476,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhY-Tz-FIc">
+                                <rect key="frame" x="119" y="447" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="WXk-Su-igy"/>
+                    <connections>
+                        <outlet property="pwTextField" destination="EhM-RZ-g7K" id="hQZ-uw-lbx"/>
+                        <outlet property="ssidTextField" destination="Kin-zV-aul" id="BNz-gd-Fk6"/>
+                        <outlet property="testLabel" destination="RhY-Tz-FIc" id="jPj-gO-Jou"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pz-fe-w6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
