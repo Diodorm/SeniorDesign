@@ -39,9 +39,13 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onPairPressed(_ sender: Any) {
+        guard isConnected else {
+            return
+        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     // MARK: Bluetooth Pairing

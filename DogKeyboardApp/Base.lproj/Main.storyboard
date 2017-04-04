@@ -300,7 +300,7 @@
         <!--Home-->
         <scene sceneID="CLE-As-TkG">
             <objects>
-                <viewController id="L5S-X1-pdg" customClass="MainViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="L5S-X1-pdg" customClass="MainViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="71A-wN-38k"/>
                         <viewControllerLayoutGuide type="bottom" id="zRT-VQ-SrB"/>
