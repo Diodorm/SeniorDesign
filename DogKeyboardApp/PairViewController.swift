@@ -44,9 +44,6 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     }
     
     @IBAction func onPairPressed(_ sender: Any) {
-        guard isConnected else {
-            return
-        }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
         self.navigationController?.pushViewController(controller, animated: true)
