@@ -417,7 +417,7 @@
         <!--Settings-->
         <scene sceneID="Ede-id-USI">
             <objects>
-                <viewController id="uie-sg-P3d" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uie-sg-P3d" customClass="SettingsViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9N3-ic-Tz0"/>
                         <viewControllerLayoutGuide type="bottom" id="dVb-Av-Xzg"/>

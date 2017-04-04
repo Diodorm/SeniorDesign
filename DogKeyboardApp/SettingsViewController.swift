@@ -1,20 +1,18 @@
 //
-//  StatViewController.swift
+//  SettingsViewController.swift
 //  DogKeyboardApp
 //
-//  Created by Sanny Chun on 3/28/17.
+//  Created by Sanny Chun on 4/3/17.
 //  Copyright © 2017 TeamSupreme. All rights reserved.
 //
 
 import UIKit
 
-class StatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
+
         // Do any additional setup after loading the view.
     }
 
@@ -33,15 +31,5 @@ class StatViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = UIColor.red
-        return cell
-    }
 
 }

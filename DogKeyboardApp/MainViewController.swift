@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreBluetooth
+import NMSSH
 
 class MainViewController: UIViewController  {
 
