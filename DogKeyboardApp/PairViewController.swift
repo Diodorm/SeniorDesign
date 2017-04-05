@@ -32,24 +32,34 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
         super.viewDidLoad()
         //Bluetooth: Manager Declaration
         manager = CBCentralManager(delegate: self, queue: nil)
-        
+    }
+    
+    //Action taken when Green Button is pressed:
+    //Attempt connection to server via SSH
+    @IBAction func onPairPressed(_ sender: Any) {
+        serverConnect()
+        if isConnected == true {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+
+    // MARK: Server Connection
+    // SSH: establish connection to server. Server is Reese Aitken's private server for now.
+    func serverConnect() {
         let session = NMSSHSession(host: "199.66.180.8", andUsername: "DogKeyboard")
         session?.connect()
+        
         if session?.isConnected == true {
             session?.authenticate(byPassword: "TeamSupreme186")
             if session?.isAuthorized == true {
                 print("Connection Successful.")
+                isConnected = true
             }
         }
     }
     
-    @IBAction func onPairPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
-
-
     // MARK: Bluetooth Pairing
     // Bluetooth: Scan for devices
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
