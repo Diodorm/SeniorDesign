@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dog Keyboard-->
+        <!--Pair View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PairViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -396,7 +396,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aK4-1P-AoR" id="BZQ-1q-9jI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -448,6 +448,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBg-ff-Qc9">
                                 <rect key="frame" x="267" y="100" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="disableSwitchPressed:" destination="uie-sg-P3d" eventType="valueChanged" id="baP-m8-noy"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-or-ZZW">
                                 <rect key="frame" x="129" y="300" width="116" height="36"/>
@@ -488,6 +491,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="WXk-Su-igy"/>
                     <connections>
+                        <outlet property="disableSwitch" destination="nBg-ff-Qc9" id="eOt-FS-Zgk"/>
                         <outlet property="pwTextField" destination="EhM-RZ-g7K" id="hQZ-uw-lbx"/>
                         <outlet property="ssidTextField" destination="Kin-zV-aul" id="BNz-gd-Fk6"/>
                         <outlet property="testLabel" destination="RhY-Tz-FIc" id="jPj-gO-Jou"/>

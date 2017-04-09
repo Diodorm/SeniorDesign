@@ -16,6 +16,7 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     // Bluetooth: variables
     var manager: CBCentralManager!
     var peripheral: CBPeripheral!
+    var isConnected = false
     
     // Bluetooth: UUID and Service Name
     let BEAN_NAME = "DogKeyboard"
@@ -40,7 +41,7 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-
+    
     // MARK: Server Connection
     // SSH: establish connection to server. Server is Reese Aitken's private server for now.
     func serverConnect() {
@@ -56,17 +57,7 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
         }
     }
     
-    @IBAction func onPairPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
     // MARK: Bluetooth Pairing
-    @IBAction func pairKeyboard(_ sender: Any) {
-        centralManagerDidUpdateState(manager)
-    }
-    
     // Bluetooth: Scan for devices
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
@@ -142,4 +133,3 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
      }
      */
 }
-
