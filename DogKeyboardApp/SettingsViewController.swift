@@ -44,6 +44,8 @@ class SettingsViewController: UIViewController {
         defaults.set(pw, forKey:"pwStore")
         defaults.synchronize()
     }
+    
+    // Action for the state change of the disable button
     @IBAction func disableSwitchPressed(_ sender: Any) {
         if disableSwitch.isOn {
             
