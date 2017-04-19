@@ -34,12 +34,14 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     //Action taken when Green Button is pressed:
     //Attempt connection to server via SSH
     @IBAction func onPairPressed(_ sender: Any) {
+        
         serverConnect()
         if isConnected == true {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
             self.navigationController?.pushViewController(controller, animated: true)
         }
+ 
     }
     
     // MARK: Server Connection

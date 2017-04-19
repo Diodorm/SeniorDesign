@@ -36,7 +36,7 @@ class SettingsViewController: UIViewController {
     @IBAction func onButtonPressed(_ sender: Any) {
         let ssid = ssidTextField.text
         let pw = pwTextField.text
-        testLabel.text = ssid
+        ssidTextField.text = ssid
         
         //Userdefaults: save ssid and pw even if the app is closed.
         let defaults = UserDefaults.standard
