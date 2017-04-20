@@ -41,7 +41,6 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
             let controller = storyboard.instantiateViewController(withIdentifier: "homeViewController")
             self.navigationController?.pushViewController(controller, animated: true)
         }
- 
     }
     
     // MARK: Server Connection

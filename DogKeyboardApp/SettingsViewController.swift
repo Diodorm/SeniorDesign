@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class SettingsViewController: UIViewController {
 
@@ -37,6 +38,7 @@ class SettingsViewController: UIViewController {
         let ssid = ssidTextField.text
         let pw = pwTextField.text
         ssidTextField.text = ssid
+        writeToFile(content: ssid! + "\n" + pw!, fileName: "settings")
         
         //Userdefaults: save ssid and pw even if the app is closed.
         let defaults = UserDefaults.standard
@@ -44,13 +46,26 @@ class SettingsViewController: UIViewController {
         defaults.set(pw, forKey:"pwStore")
         defaults.synchronize()
     }
-    
     // Action for the state change of the disable button
     @IBAction func disableSwitchPressed(_ sender: Any) {
         if disableSwitch.isOn {
             
         } else {
             
+        }
+    }
+    
+    func writeToFile(content: String, fileName: String) {
+        let contentToWrite = content + "\n"
+        let directoryURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let fileURL = directoryURL.appendingPathComponent(fileName).appendingPathExtension("txt")
+        print("FilePath: \(fileURL.path)")
+        
+        do {
+            try contentToWrite.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+            print("Settings successfully saved.")
+        } catch let error as NSError {
+            print("Failed to save the settings.")
         }
     }
 }
