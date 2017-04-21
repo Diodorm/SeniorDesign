@@ -91,8 +91,11 @@ class SettingsViewController: UIViewController {
         }
         
         if isConnected == true {
-            session?.channel.uploadFile(fileURL.path, to:"")
-            print("settings file uploaded successfully.")
+            //session?.channel.uploadFile(fileURL.path, to:"http://199.66.180.8/dogKeyboard")
+            session?.sftp.connect()
+            session?.sftp.createDirectory(atPath: "/test")
+            session?.sftp.moveItem(atPath: fileURL.path, toPath: "http://199.66.180.8/dogKeyboard/settings.txt")
+            session?.sftp.disconnect()
         } else {
             print("cannot connect to the server.")
         }
