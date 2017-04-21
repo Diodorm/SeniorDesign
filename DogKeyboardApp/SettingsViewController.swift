@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import NMSSH
 
 class SettingsViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var disableSwitch: UISwitch!
+    let session = NMSSHSession(host: "199.66.180.8", andUsername: "DogKeyboard")
+    var isConnected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +41,9 @@ class SettingsViewController: UIViewController {
         let ssid = ssidTextField.text
         let pw = pwTextField.text
         ssidTextField.text = ssid
-        writeToFile(content: ssid! + "\n" + pw!, fileName: "settings")
+        serverConnect()
+        uploadFile(content: ssid! + "\n" + pw!, fileName: "settings")
+        session?.disconnect()
         
         //Userdefaults: save ssid and pw even if the app is closed.
         let defaults = UserDefaults.standard
@@ -46,6 +51,21 @@ class SettingsViewController: UIViewController {
         defaults.set(pw, forKey:"pwStore")
         defaults.synchronize()
     }
+    
+    // MARK: Server Connection
+    // SSH: establish connection to server. Server is Reese Aitken's private server for now.
+    func serverConnect() {
+        session?.connect()
+        
+        if session?.isConnected == true {
+            session?.authenticate(byPassword: "TeamSupreme186")
+            if session?.isAuthorized == true {
+                print("Connection Successful.")
+                isConnected = true
+            }
+        }
+    }
+
     // Action for the state change of the disable button
     @IBAction func disableSwitchPressed(_ sender: Any) {
         if disableSwitch.isOn {
@@ -55,7 +75,7 @@ class SettingsViewController: UIViewController {
         }
     }
     
-    func writeToFile(content: String, fileName: String) {
+    func uploadFile(content: String, fileName: String) {
         let contentToWrite = content + "\n"
         let directoryURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         let fileURL = directoryURL.appendingPathComponent(fileName).appendingPathExtension("txt")
@@ -66,6 +86,13 @@ class SettingsViewController: UIViewController {
             print("Settings successfully saved.")
         } catch let error as NSError {
             print("Failed to save the settings.")
+        }
+        
+        if isConnected == true {
+            session?.channel.uploadFile(fileURL.path, to:"")
+            print("settings file uploaded successfully.")
+        } else {
+            print("cannot connect to the server.")
         }
     }
 }

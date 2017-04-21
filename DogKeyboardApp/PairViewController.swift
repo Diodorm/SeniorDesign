@@ -56,6 +56,7 @@ class PairViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
                 isConnected = true
             }
         }
+        session?.disconnect()
     }
     
     // MARK: Bluetooth Pairing
