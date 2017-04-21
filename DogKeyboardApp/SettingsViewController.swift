@@ -75,6 +75,8 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    // MARK: Uploading File to Server
+    // Upload the settings file to the server
     func uploadFile(content: String, fileName: String) {
         let contentToWrite = content + "\n"
         let directoryURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
