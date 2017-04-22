@@ -20,6 +20,7 @@ The app will act as a remote controller to the physical keyboard. The user will 
 
 <b>Download Instructions</b>
 * <u>Source Code:</u>
+
 Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
 
 * Xcode:
