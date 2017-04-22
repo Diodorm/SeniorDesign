@@ -1,4 +1,4 @@
-# Dog Keyboard App ver 1.0
+# Dog Keyboard App
 Senior Design Spring Semester 2017
 Reese Aitken, Leo Chen, Joon Choi, Sanny Chun, Hyunsu Park
 
@@ -7,6 +7,11 @@ We are designing a Dog Keyboard for our client Joelle Alcaidinho.
 This repository is for version-controlling our iOS app.
 
 The app will act as a remote controller to the physical keyboard. The user will be able to set sounds, quiet-hours, and read statistical data. 
+
+# Release Notes
+Current ver. is 1.0
+- SSID and PW are saved as .txt file
+- SSH connection status checking updated
 
 <b>Please follow along this guideline to run the app successfully.</b>
 
