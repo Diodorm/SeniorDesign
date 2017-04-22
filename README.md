@@ -17,8 +17,8 @@ The app will act as a remote controller to the physical keyboard. The user will 
 - Device must run at least iOS 8
 
 <b>Dependent Libraries/Programs</b>
-- Will need to have XCode installed on Mac
-- Mac must be able to run/compile Swift
+- Will need to have XCode installed on Mac (get the ltest version. Current ver. is 8.3.2)
+- Mac must be able to run/compile Swift 3.1
 
 <b>Download Instructions</b>
 * Source Code:
@@ -43,3 +43,13 @@ The app will act as a remote controller to the physical keyboard. The user will 
 
 App will launch on device. An icon will be created. 
 In case of an update, the user should reconnect the device to the Mac and repeat the <i>Running the App</i> section.
+
+# Troubleshooting
+In the case of malfunction/erroneous launch, please check whether your devices match these criteria:
+
+1. Make sure your iPhone/iPad run at least iOS8.
+2. Make sure that your device is registered by your Mac prior to running the source code (device connection can be checked using iTunes)
+3. Make sure XCode is up-to-date, and that your Mac is able to compile/run Swift 3.1
+4. For safety measures, make sure the source code folder & its path names are composed of ONLY Alphabets (e.g. Users/username/Documents/SeniorDesign)
+
+For any other inquiries, please e-mail: shc1991@gatech.edu
