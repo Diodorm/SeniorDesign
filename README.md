@@ -8,6 +8,8 @@ This repository is for version-controlling our iOS app.
 
 The app will act as a remote controller to the physical keyboard. The user will be able to set sounds, quiet-hours, and read statistical data. 
 
+<b>Please follow along this guideline to run the app successfully.</b>
+
 # Install Guide
 <b>Pre-Requisite</b>
 - Must be a Mac user
@@ -19,9 +21,9 @@ The app will act as a remote controller to the physical keyboard. The user will 
 - Mac must be able to run/compile Swift
 
 <b>Download Instructions</b>
-* <u>Source Code:</u>
+* Source Code:
 
-Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
+  Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from    https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
 
 * Xcode:
 1. Run AppStore
