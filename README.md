@@ -10,7 +10,7 @@ The app will act as a remote controller to the physical keyboard. The user will 
 
 # Install Guide
 <b>Pre-Requisite
-- Must be a Mac user
+- Must be a Mac user</b>
 - Must own an iOS device, such as iPhone/iPad
 - Device must run at least iOS 8
 
