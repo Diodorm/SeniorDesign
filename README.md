@@ -13,9 +13,9 @@ Current ver. is 1.0
 - SSID and PW are saved as .txt file
 - SSH connection status checking updated
 
+# Install Guide
 <b>Please follow along this guideline to run the app successfully.</b>
 
-# Install Guide
 <b>Pre-Requisite</b>
 - Must be a Mac user
 - Must own an iOS device, such as iPhone/iPad
