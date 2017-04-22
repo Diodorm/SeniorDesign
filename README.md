@@ -19,8 +19,8 @@ The app will act as a remote controller to the physical keyboard. The user will 
 - Mac must be able to run/compile Swift
 
 <b>Download Instructions</b>
-* Source Code:
-- Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
+* <u>Source Code:</u>
+Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
 
 * Xcode:
 1. Run AppStore
