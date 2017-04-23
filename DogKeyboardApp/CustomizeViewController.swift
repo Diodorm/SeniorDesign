@@ -15,7 +15,7 @@ class CustomizeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        selected.text = "None"
         // Do any additional setup after loading the view.
     }
 
