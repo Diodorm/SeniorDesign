@@ -23,7 +23,7 @@ Current ver. is 1.0
 - Device must run at least iOS 8
 
 <b>Dependent Libraries/Programs</b>
-- Will need to have XCode installed on Mac (get the ltest version. Current ver. is 8.3.2)
+- Will need to have XCode installed on Mac (get the latest version. Current ver. is 8.3.2)
 - Mac must be able to run/compile Swift 3.1
 - Will need to have CocoaPods & NMSSH installed prior to running the build
 
@@ -39,12 +39,12 @@ Current ver. is 1.0
 3. Download and install, following the instructions given.
 
 <b>* CocoaPods & NMSSH (https://guides.cocoapods.org/using/getting-started.html)</b>
-1. Open terminal, and type: sudo gem install cocoapods
+1. Open terminal, and type: <i>sudo gem install cocoapods</i>
 2. Pull the NMSSH git from: https://github.com/NMSSH/NMSSH and save it on a location on your Mac
-2. In terminal, cd to Project Folder, and type: pod init
+2. In terminal, cd to Project Folder, and type: <i>pod init</i>
 3. A Podfile file should have been created in the project folder. Open it using any text editor
-4. Inside Podfile, include this line: pod ’NMSSH’ , and save
-5. Go back to terminal, and type: pod install
+4. Inside Podfile, include this line: <i>pod ’NMSSH’ after # Pods for DogKeyboardApp, and save the file once you're done</i>
+5. Go back to terminal, and type: <i>pod install</i>
 
 <b>* Viewing the Source Code on XCode</b>
 1. Launch XCode
