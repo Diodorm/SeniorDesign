@@ -43,7 +43,7 @@ Current ver. is 1.0
 2. Pull the NMSSH git from: https://github.com/NMSSH/NMSSH and save it on a location on your Mac
 2. In terminal, cd to Project Folder, and type: <i>pod init</i>
 3. A Podfile file should have been created in the project folder. Open it using any text editor
-4. Inside Podfile, include this line: <i>pod ’NMSSH’ after # Pods for DogKeyboardApp, and save the file once you're done</i>
+4. Inside Podfile, include this line: <i>pod ’NMSSH’ </i>after # Pods for DogKeyboardApp, and save the file once you're done
 5. Go back to terminal, and type: <i>pod install</i>
 
 <b>* Viewing the Source Code on XCode</b>
