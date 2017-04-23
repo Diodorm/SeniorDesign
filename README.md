@@ -25,6 +25,7 @@ Current ver. is 1.0
 <b>Dependent Libraries/Programs</b>
 - Will need to have XCode installed on Mac (get the ltest version. Current ver. is 8.3.2)
 - Mac must be able to run/compile Swift 3.1
+- Will need to have CocoaPods & NMSSH installed prior to running the build
 
 <b>Download Instructions</b>
 * Source Code:
@@ -36,10 +37,18 @@ Current ver. is 1.0
 2. Search XCode
 3. Download and install, following the instructions given.
 
+* CocoaPods & NMSSH (https://guides.cocoapods.org/using/getting-started.html)
+1. Open terminal, and type: sudo gem install cocoapods
+2. Pull the NMSSH git from: https://github.com/NMSSH/NMSSH and save it on a location on your Mac
+2. In terminal, cd to Project Folder, and type: pod init
+3. A Podfile file should have been created in the project folder. Open it using any text editor
+4. Inside Podfile, include this line: pod ’NMSSH’ , and save
+5. Go back to terminal, and type: pod install
+
 * Viewing the Source Code on XCode
 1. Launch XCode
 2. Select <i>Open another project</i>
-3. Locate the source code folder (that you have just pulled), and click <i>Open</i>.
+3. Locate the source code folder, and make sure to select the .xcworkspace file (the newly created CocoaPods file) and click <i>Open</i>.
 
 # Running the App
 1. Connect iOS device to Mac
