@@ -15,6 +15,7 @@
 		49BA785F1E763E5200B6C549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BA785E1E763E5200B6C549 /* Assets.xcassets */; };
 		49BA78621E763E5200B6C549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA78601E763E5200B6C549 /* LaunchScreen.storyboard */; };
 		49FA89AC1E8B0CBE001F5542 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */; };
+		CE4200B71EAD44D10020D2F5 /* CustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4200B61EAD44D10020D2F5 /* CustomizeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		83C3F1226BDC80782777CB49 /* Pods-DogKeyboardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogKeyboardApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogKeyboardApp/Pods-DogKeyboardApp.release.xcconfig"; sourceTree = "<group>"; };
 		BAE3301F6987603B8C604A45 /* Pods-DogKeyboardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogKeyboardApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogKeyboardApp/Pods-DogKeyboardApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4200B61EAD44D10020D2F5 /* CustomizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeViewController.swift; sourceTree = "<group>"; };
 		DAC4813C2AB6BE9E271C2A11 /* Pods_DogKeyboardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogKeyboardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				49BA78571E763E5200B6C549 /* AppDelegate.swift */,
+				CE4200B61EAD44D10020D2F5 /* CustomizeViewController.swift */,
 				49BA78591E763E5200B6C549 /* PairViewController.swift */,
 				49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */,
 				49894D881E92968B0088241B /* SettingsViewController.swift */,
@@ -223,6 +226,7 @@
 				49FA89AC1E8B0CBE001F5542 /* MainViewController.swift in Sources */,
 				49BA785A1E763E5200B6C549 /* PairViewController.swift in Sources */,
 				49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */,
+				CE4200B71EAD44D10020D2F5 /* CustomizeViewController.swift in Sources */,
 				49894D891E92968B0088241B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

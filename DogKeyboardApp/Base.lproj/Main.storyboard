@@ -52,7 +52,7 @@
         <!--Customize-->
         <scene sceneID="CKh-T4-cKV">
             <objects>
-                <viewController id="Pcm-nn-gbQ" customClass="ViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pcm-nn-gbQ" customClass="CustomizeViewController" customModule="DogKeyboardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JeM-Cl-3yb"/>
                         <viewControllerLayoutGuide type="bottom" id="Zm9-TH-J0M"/>
@@ -69,6 +69,9 @@
                                         <rect key="frame" x="68" y="14" width="102" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Play Sound"/>
+                                        <connections>
+                                            <action selector="playSound:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="Mmr-GS-6FZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeA-Lr-dSm">
                                         <rect key="frame" x="36" y="63" width="168" height="30"/>
@@ -101,18 +104,30 @@
                                                     <constraint firstAttribute="width" secondItem="mXE-iq-STD" secondAttribute="height" multiplier="1:1" id="N0l-IL-VvW"/>
                                                 </constraints>
                                                 <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="button1Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="xRT-aV-JlI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-La-xiV">
                                                 <rect key="frame" x="67" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="button2Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="0qr-Ce-mOq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9q-2y-ISi">
                                                 <rect key="frame" x="134" y="0.0" width="61.5" height="62"/>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="button3Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="mQ3-wA-PMY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3m-1v-RNB">
                                                 <rect key="frame" x="200.5" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="button4Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="s45-Ea-0Ze"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,18 +137,30 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LU-ca-5mk">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="button5Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="7Oe-ih-4rn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J26-zb-2Ni">
                                                 <rect key="frame" x="67" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="button6Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="9da-fe-uY3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nO-D8-uQf">
                                                 <rect key="frame" x="134" y="0.0" width="61.5" height="62"/>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="button7Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="Tn8-G0-2YB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxM-hB-vt5">
                                                 <rect key="frame" x="200.5" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="button8Pressed:" destination="Pcm-nn-gbQ" eventType="touchUpInside" id="Vrz-6E-Mf7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -141,6 +168,20 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a key to customize" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2y-Oi-Zh7">
                                 <rect key="frame" x="90" y="113.5" width="195" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected Button:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-fN-Rbs">
+                                <rect key="frame" x="105" y="288" width="95" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RW-uI-mqi">
+                                <rect key="frame" x="208" y="291" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -158,10 +199,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Customize" id="ICq-PB-DP8"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="selected" destination="6RW-uI-mqi" id="zTp-pJ-obg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWm-lj-h15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3086" y="-743"/>
+            <point key="canvasLocation" x="3085.5999999999999" y="-743.47826086956525"/>
         </scene>
         <!--Custom Sound-->
         <scene sceneID="BfW-2l-X0O">

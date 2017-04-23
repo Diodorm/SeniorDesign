@@ -91,7 +91,7 @@ class SettingsViewController: UIViewController {
         
         if session?.isConnected == true {
             session?.sftp.connect()
-            session?.sftp.writeFile(atPath: fileURL.path, toFileAtPath: "/home/DogKeyboard/dogKeyboard/settings.txt")
+            session?.sftp.writeFile(atPath: fileURL.path, toFileAtPath: "/home/DogKeyboard/settings.txt")
             session?.sftp.disconnect()
         } else {
             print("cannot connect to the server.")
