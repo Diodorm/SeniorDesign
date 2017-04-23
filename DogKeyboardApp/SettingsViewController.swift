@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController {
     // Wireless SSID and Password variable
     @IBOutlet weak var ssidTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var savedSsid: UILabel!
     @IBOutlet weak var disableSwitch: UISwitch!
     let session = NMSSHSession(host: "199.66.180.8", andUsername: "DogKeyboard")
     var isConnected = false
@@ -26,7 +26,7 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
         if let ssid = defaults.object(forKey: "ssidStore") as? String{
-            testLabel.text = ssid
+            savedSsid.text = ssid
         }
     }
 
@@ -40,9 +40,9 @@ class SettingsViewController: UIViewController {
     @IBAction func onButtonPressed(_ sender: Any) {
         let ssid = ssidTextField.text
         let pw = pwTextField.text
-        ssidTextField.text = ssid
+        savedSsid.text = ssid
         serverConnect()
-        uploadFile(content: ssid! + "\n" + pw!, fileName: "settings")
+        uploadFile(content: "ssid: " + ssid! + "\n" + "pw: " + pw!, fileName: "settings")
         session?.disconnect()
         
         //Userdefaults: save ssid and pw even if the app is closed.
@@ -52,11 +52,11 @@ class SettingsViewController: UIViewController {
         defaults.synchronize()
     }
     
+    
     // MARK: Server Connection
     // SSH: establish connection to server. Server is Reese Aitken's private server for now.
     func serverConnect() {
         session?.connect()
-        
         if session?.isConnected == true {
             session?.authenticate(byPassword: "TeamSupreme186")
             if session?.isAuthorized == true {
@@ -90,11 +90,10 @@ class SettingsViewController: UIViewController {
             print("Failed to save the settings.")
         }
         
-        if isConnected == true {
-            //session?.channel.uploadFile(fileURL.path, to:"http://199.66.180.8/dogKeyboard")
+        if session?.isConnected == true {
             session?.sftp.connect()
-            session?.sftp.createDirectory(atPath: "/test")
-            session?.sftp.moveItem(atPath: fileURL.path, toPath: "http://199.66.180.8/dogKeyboard/settings.txt")
+            print("here")
+            session?.sftp.writeFile(atPath: fileURL.path, toFileAtPath: "/home/DogKeyboard/dogKeyboard/settings.txt")
             session?.sftp.disconnect()
         } else {
             print("cannot connect to the server.")

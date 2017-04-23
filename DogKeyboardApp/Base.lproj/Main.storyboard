@@ -437,6 +437,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saved SSID:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Ta-NJX">
+                                <rect key="frame" x="16" y="356" width="95" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WiFi Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05s-y7-E9A">
                                 <rect key="frame" x="16" y="232" width="95" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -479,7 +486,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhY-Tz-FIc">
-                                <rect key="frame" x="119" y="447" width="148" height="21"/>
+                                <rect key="frame" x="119" y="356" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -492,8 +499,8 @@
                     <connections>
                         <outlet property="disableSwitch" destination="nBg-ff-Qc9" id="eOt-FS-Zgk"/>
                         <outlet property="pwTextField" destination="EhM-RZ-g7K" id="hQZ-uw-lbx"/>
+                        <outlet property="savedSsid" destination="RhY-Tz-FIc" id="3zX-gU-ch3"/>
                         <outlet property="ssidTextField" destination="Kin-zV-aul" id="BNz-gd-Fk6"/>
-                        <outlet property="testLabel" destination="RhY-Tz-FIc" id="jPj-gO-Jou"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pz-fe-w6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
