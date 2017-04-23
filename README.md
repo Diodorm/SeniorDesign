@@ -28,16 +28,16 @@ Current ver. is 1.0
 - Will need to have CocoaPods & NMSSH installed prior to running the build
 
 <b>Download Instructions</b>
-* Source Code:
+<b>* Source Code:</b>
 
   Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from    https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
 
-* Xcode:
+<b>* Xcode:</b>
 1. Run AppStore
 2. Search XCode
 3. Download and install, following the instructions given.
 
-* CocoaPods & NMSSH (https://guides.cocoapods.org/using/getting-started.html)
+<b>* CocoaPods & NMSSH (https://guides.cocoapods.org/using/getting-started.html)</b>
 1. Open terminal, and type: sudo gem install cocoapods
 2. Pull the NMSSH git from: https://github.com/NMSSH/NMSSH and save it on a location on your Mac
 2. In terminal, cd to Project Folder, and type: pod init
@@ -45,7 +45,7 @@ Current ver. is 1.0
 4. Inside Podfile, include this line: pod ’NMSSH’ , and save
 5. Go back to terminal, and type: pod install
 
-* Viewing the Source Code on XCode
+<b>* Viewing the Source Code on XCode</b>
 1. Launch XCode
 2. Select <i>Open another project</i>
 3. Locate the source code folder, and make sure to select the .xcworkspace file (the newly created CocoaPods file) and click <i>Open</i>.
