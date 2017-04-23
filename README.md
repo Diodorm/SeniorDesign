@@ -1,6 +1,8 @@
 # Dog Keyboard App
 Senior Design Spring Semester 2017
 
+Team Supreme (186)
+
 Reese Aitken, Leo Chen, Joon Choi, Sanny Chun, Hyunsu Park
 
 # Project Description
