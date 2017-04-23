@@ -24,6 +24,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
+        disableSwitch.setOn(false, animated: false)
         // Set savedSsid label.
         if let ssid = defaults.object(forKey: "ssidStore") as? String{
             savedSsid.text = ssid
