@@ -12,6 +12,7 @@ The app will act as a remote controller to the physical keyboard. The user will 
 Current ver. is 1.0
 - SSID and PW are saved as .txt file
 - SSH connection status checking updated
+- Button selection on Customize Keys updated
 
 # Install Guide
 <b>Please follow along this guideline to run the app successfully.</b>
@@ -52,7 +53,7 @@ In case of an update, the user should reconnect the device to the Mac and repeat
 # Troubleshooting
 In the case of malfunction/erroneous launch, please check whether your devices match these criteria:
 
-1. Make sure your iPhone/iPad run at least iOS8.
+1. Make sure your iPhone/iPad runs at least iOS8.
 2. Make sure that your device is registered by your Mac prior to running the source code (device connection can be checked using iTunes)
 3. Make sure XCode is up-to-date, and that your Mac is able to compile/run Swift 3.1
 4. For safety measures, make sure the source code folder & its path names are composed of ONLY Alphabets (e.g. Users/username/Documents/SeniorDesign)
