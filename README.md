@@ -27,7 +27,8 @@ Current ver. is 1.0
 - Mac must be able to run/compile Swift 3.1
 - Will need to have CocoaPods & NMSSH installed prior to running the build
 
-<b>Download Instructions</b>
+# Download Instructions
+
 <b>* Source Code:</b>
 
   Pull https://github.com/Diodorm/SeniorDesign.git using Git, or download the .zip file from    https://github.com/Diodorm/SeniorDesign to your desired Folder on your Mac.
