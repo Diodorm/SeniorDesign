@@ -19,12 +19,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var savedSsid: UILabel!
     @IBOutlet weak var disableSwitch: UISwitch!
     let session = NMSSHSession(host: "199.66.180.8", andUsername: "DogKeyboard")
-    var isConnected = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let defaults = UserDefaults.standard
+        // Set savedSsid label.
         if let ssid = defaults.object(forKey: "ssidStore") as? String{
             savedSsid.text = ssid
         }
@@ -61,7 +61,6 @@ class SettingsViewController: UIViewController {
             session?.authenticate(byPassword: "TeamSupreme186")
             if session?.isAuthorized == true {
                 print("Connection Successful.")
-                isConnected = true
             }
         }
     }
@@ -92,7 +91,6 @@ class SettingsViewController: UIViewController {
         
         if session?.isConnected == true {
             session?.sftp.connect()
-            print("here")
             session?.sftp.writeFile(atPath: fileURL.path, toFileAtPath: "/home/DogKeyboard/dogKeyboard/settings.txt")
             session?.sftp.disconnect()
         } else {
