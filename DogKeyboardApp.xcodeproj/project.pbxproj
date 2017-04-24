@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		22F7FA4CC3EBD7ADD8CE9294 /* Pods_DogKeyboardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC4813C2AB6BE9E271C2A11 /* Pods_DogKeyboardApp.framework */; };
 		49894D891E92968B0088241B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49894D881E92968B0088241B /* SettingsViewController.swift */; };
+		49A074361EAD92E6009B21E6 /* QuietHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A074351EAD92E6009B21E6 /* QuietHoursViewController.swift */; };
+		49A074381EAD9335009B21E6 /* CustomSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A074371EAD9335009B21E6 /* CustomSoundsViewController.swift */; };
 		49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78571E763E5200B6C549 /* AppDelegate.swift */; };
 		49BA785A1E763E5200B6C549 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78591E763E5200B6C549 /* PairViewController.swift */; };
 		49BA785D1E763E5200B6C549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BA785B1E763E5200B6C549 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		49894D881E92968B0088241B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		49894D8F1E936B990088241B /* DogKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		49A074351EAD92E6009B21E6 /* QuietHoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuietHoursViewController.swift; sourceTree = "<group>"; };
+		49A074371EAD9335009B21E6 /* CustomSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSoundsViewController.swift; sourceTree = "<group>"; };
 		49BA78541E763E5200B6C549 /* DogKeyboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogKeyboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BA78571E763E5200B6C549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BA78591E763E5200B6C549 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				49FA89AB1E8B0CBE001F5542 /* MainViewController.swift */,
 				49894D881E92968B0088241B /* SettingsViewController.swift */,
 				49BA785B1E763E5200B6C549 /* Main.storyboard */,
+				49A074371EAD9335009B21E6 /* CustomSoundsViewController.swift */,
+				49A074351EAD92E6009B21E6 /* QuietHoursViewController.swift */,
 				49BA785E1E763E5200B6C549 /* Assets.xcassets */,
 				49BA78601E763E5200B6C549 /* LaunchScreen.storyboard */,
 				49BA78631E763E5200B6C549 /* Info.plist */,
@@ -228,6 +234,8 @@
 				49BA78581E763E5200B6C549 /* AppDelegate.swift in Sources */,
 				CE4200B71EAD44D10020D2F5 /* CustomizeViewController.swift in Sources */,
 				49894D891E92968B0088241B /* SettingsViewController.swift in Sources */,
+				49A074381EAD9335009B21E6 /* CustomSoundsViewController.swift in Sources */,
+				49A074361EAD92E6009B21E6 /* QuietHoursViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
