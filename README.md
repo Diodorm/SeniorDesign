@@ -39,14 +39,14 @@ Keyboard:
 - User: root
 - PW: TeamSupreme
 
-Access method: in terminal, write: username$ <i>ssh root@123.456.789.0</i>
+Access method: in terminal: username$ <i>ssh root@123.456.789.0</i>
 
 Server:
 - IP address: 199.66.180.8
 - User: DogKeyboard
 - PW: TeamSupreme186
 
-Access method: in terminal, write: username$ <i>ssh DogKeyboard@199.66.180.8</i>
+Access method: in terminal: username$ <i>ssh DogKeyboard@199.66.180.8</i>
 
 # Download Instructions
 
@@ -59,7 +59,7 @@ Access method: in terminal, write: username$ <i>ssh DogKeyboard@199.66.180.8</i>
 2. Search XCode
 3. Download and install, following the instructions given.
 
-<b>* CocoaPods & NMSSH (https://guides.cocoapods.org/using/getting-started.html)</b>
+<b>* CocoaPods and NMSSH (https://guides.cocoapods.org/using/getting-started.html)</b>
 1. Open terminal, and type: <i>sudo gem install cocoapods</i>
 2. Pull the NMSSH git from: https://github.com/NMSSH/NMSSH and save it on a location on your Mac
 2. In terminal, cd to Project Folder, and type: <i>pod init</i>
