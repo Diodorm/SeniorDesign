@@ -17,7 +17,7 @@ Current ver. is 1.0
 - SSH connection status checking updated
 - Button selection on Customize Keys updated
 
-# Install Guide
+# Software Install Guide
 <b>Please follow along this guideline to run the app successfully.</b>
 
 <b>Pre-Requisite</b>
@@ -29,6 +29,24 @@ Current ver. is 1.0
 - Will need to have XCode installed on Mac (get the latest version. Current ver. is 8.3.2)
 - Mac must be able to run/compile Swift 3.1
 - Will need to have CocoaPods & NMSSH installed prior to running the build
+
+<b>Keyboard Access</b>
+
+These are the ID/PW for keyboard & server access:
+
+Keyboard:
+- IP address: whatever IP address is set at the moment
+- User: root
+- PW: TeamSupreme
+
+Access method: in terminal, write: username$ <i>ssh root@123.456.789.0</i>
+
+Server:
+- IP address: 199.66.180.8
+- User: DogKeyboard
+- PW: TeamSupreme186
+
+Access method: in terminal, write: username$ <i>ssh DogKeyboard@199.66.180.8</i>
 
 # Download Instructions
 
