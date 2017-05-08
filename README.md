@@ -36,15 +36,13 @@ These are the ID/PW for keyboard & server access:
 
 Keyboard:
 - IP address: whatever IP address is set at the moment
-- User: root
-- PW: TeamSupreme
+- Username and PW will be emailed after request
 
 Access method: in terminal: username$ <i>ssh root@123.456.789.0</i>
 
 Server:
 - IP address: 199.66.180.8
-- User: DogKeyboard
-- PW: TeamSupreme186
+- Username and PW will be emailed after request
 
 Access method: in terminal: username$ <i>ssh DogKeyboard@199.66.180.8</i>
 
